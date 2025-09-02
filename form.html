@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .text-cent {
+    text-align: center;
+}
+
+.contact-head {
+    border-radius: 24px;
+    margin: 24px;
+    padding: 70px;
+    background: linear-gradient(180deg, #8ca6cd, #0047b3);
+}
+.text-cent{
+    position: relative;
+    overflow: visible ;
+}
+    </style>
+</head>
+<body>
+<nav class="navbar">
+    <!-- Left logo -->
+    <div class="logo">
+      <img src="./xcel.png" alt="Logo">
+    </div>
+
+    <!-- Right links -->
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="service.html">Services</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="form.html">Book Consultation <i class="fas fa-arrow-right ms-2"></i></a></li>
+    </ul>
+
+    <!-- Hamburger menu -->
+    <div class="hamburger" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+
+    <header class="contact-head text-cent"><h1 class="header-title">booking consulatation page</h1></header>
+    <script>
+  function toggleMenu() {
+    document.querySelector(".nav-links").classList.toggle("active");
+  }
+</script>
+    
+</body>
+</html>
